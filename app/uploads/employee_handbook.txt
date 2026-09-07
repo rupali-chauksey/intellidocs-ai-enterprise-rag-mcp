@@ -1,0 +1,125 @@
+TECHVISION INDIA — EMPLOYEE HANDBOOK
+Welcome to TechVision India | Updated: February 2026
+
+=======================================================
+CHAPTER 1: ABOUT TECHVISION INDIA
+=======================================================
+
+1.1 Company Overview
+TechVision India is a technology training and AI solutions company founded in 2018.
+We operate across 6 cities: Mumbai, Delhi, Bangalore, Chennai, Hyderabad, and Pune.
+Our mission is to upskill India's technology workforce for the AI era.
+We have trained over 50,000 professionals across 200+ enterprise clients.
+
+1.2 Our Products and Services
+Training Division: AI/ML, GenAI, DevOps, Cloud, Data Science courses
+Products Division: ML Toolkit, Data Dashboard, AI Course, Cloud Workshop, GenAI Bootcamp
+Consulting Division: Enterprise AI implementation and advisory
+
+1.3 Leadership Team
+CEO: Rajiv Mehta (rajiv.mehta@techvision.in)
+CTO: Priya Sharma (priya.sharma@techvision.in)
+HR Director: Anita Gupta (anita.gupta@techvision.in)
+CFO: Sanjay Patel (sanjay.patel@techvision.in)
+
+=======================================================
+CHAPTER 2: ONBOARDING
+=======================================================
+
+2.1 First Day Checklist
+- Collect your access card from reception (Ground Floor, Block A)
+- Meet your HR buddy who will be assigned before joining
+- Set up your laptop — IT support at extension 100 or it@techvision.in
+- Complete online onboarding modules on the Learning Portal
+- Attend the New Joiner Orientation at 10:00 AM in Conference Room B
+
+2.2 First Week Activities
+Day 1: HR orientation, office tour, laptop setup
+Day 2: Department introduction, meet your team
+Day 3: Product and services overview with the Sales team
+Day 4: Systems and tools training with IT
+Day 5: Meet your manager, discuss 30-60-90 day goals
+
+2.3 Probation Period
+All new employees serve a 3-month probation period.
+Performance is reviewed at the end of month 1 and month 3.
+Confirmation of employment is issued after successful completion of probation.
+During probation, notice period is 2 weeks on either side.
+
+2.4 Required Documents
+Please submit these to HR within your first 3 days:
+- Aadhar card (original + photocopy)
+- PAN card
+- Previous employer experience letter and relieving letter
+- Last 3 months salary slips
+- Bank account details for salary processing
+- Educational certificates (originals for verification)
+
+=======================================================
+CHAPTER 3: CODE OF CONDUCT
+=======================================================
+
+3.1 Professional Behaviour
+Treat all colleagues, clients, and vendors with respect and professionalism.
+Discrimination of any kind based on gender, religion, caste, age or any other
+protected characteristic is strictly prohibited and grounds for immediate termination.
+Sexual harassment complaints are handled under the POSH Act 2013.
+
+3.2 Confidentiality
+All company information, client data, and business strategies are confidential.
+Do not share company information with external parties without explicit approval.
+Sign the Non-Disclosure Agreement on your first day.
+Confidentiality obligations continue for 2 years after leaving the company.
+
+3.3 Conflict of Interest
+Inform HR immediately if you have a financial interest in a competitor or client.
+Do not accept gifts worth more than Rs 1,000 from clients or vendors.
+Moonlighting (working for another company simultaneously) is not permitted.
+
+3.4 Social Media Policy
+Do not post confidential company information on social media.
+You may mention your employer on LinkedIn but do not speak on behalf of the company.
+Content that brings the company into disrepute is grounds for disciplinary action.
+
+=======================================================
+CHAPTER 4: BENEFITS
+=======================================================
+
+4.1 Health Insurance
+Group health insurance of Rs 5,00,000 per employee per year.
+Coverage extends to spouse and up to 2 children.
+Cashless treatment at 500+ network hospitals across India.
+Contact hr@techvision.in for the list of network hospitals.
+
+4.2 Learning and Development
+Annual L&D budget of Rs 25,000 per employee.
+Access to all internal TechVision courses free of charge.
+External certifications pre-approved by your manager are reimbursable.
+Study leave of up to 5 days per year for approved certifications.
+
+4.3 Internet and Mobile Allowance
+Employees in Sales and Engineering receive Rs 1,000/month internet allowance.
+Mobile allowance of Rs 500/month for client-facing roles.
+Reimbursement submitted monthly through the expense portal.
+
+4.4 Employee Referral Programme
+Refer a candidate who gets hired and completes 3 months — receive Rs 15,000.
+Referral bonus paid in the month following the referee's 3-month completion.
+No limit on the number of referrals per employee.
+
+=======================================================
+CHAPTER 5: IMPORTANT CONTACTS AND SYSTEMS
+=======================================================
+
+5.1 Key Contacts
+HR Helpdesk: hr@techvision.in | Extension 200
+IT Support: it@techvision.in | Extension 100
+Finance/Payroll: finance@techvision.in | Extension 300
+Facilities: facilities@techvision.in | Extension 400
+
+5.2 Systems You Will Use
+HR Portal: hrportal.techvision.in (leave, payroll, performance)
+Learning Portal: learn.techvision.in (courses, certifications)
+Project Management: projects.techvision.in (task tracking)
+Email: Microsoft Outlook (IT will set up on Day 1)
+Communication: Microsoft Teams (primary communication tool)

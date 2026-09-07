@@ -1,3 +1,88 @@
+/* ---------- FONT SIZE TUNING ---------- */
+
+.brand h1{
+  font-size:18px;
+}
+
+.brand p{
+  font-size:11px;
+}
+
+.nav button{
+  font-size:13px;
+}
+
+.side-section{
+  font-size:11px;
+}
+
+.doc-name{
+  font-size:12px;
+}
+
+.doc-meta{
+  font-size:10px;
+}
+
+.top-title strong{
+  font-size:16px;
+}
+
+.auto{
+  font-size:10px;
+}
+
+.top-chip{
+  font-size:10px;
+}
+
+.bubble{
+  font-size:13px;
+}
+
+.meta{
+  font-size:10px;
+}
+
+.sources-title{
+  font-size:10px;
+}
+
+.source-card{
+  font-size:10px;
+}
+
+.toggle{
+  font-size:10px;
+}
+
+.route-label{
+  font-size:10px;
+}
+
+textarea{
+  font-size:13px;
+}
+
+.send{
+  font-size:12px;
+}
+
+.hint{
+  font-size:9px;
+}
+
+.status-head{
+  font-size:11px;
+}
+
+.status-row{
+  font-size:10px;
+}
+
+
+
+
 /* =====================================================
    GOOGLE FONT
 ===================================================== */
@@ -29,7 +114,117 @@ body{
     overflow:hidden;
 
 }
+/* ---------- FINAL FONT SIZE ---------- */
 
+.logo h2{
+    font-size:20px;
+}
+
+.logo p{
+    font-size:13px;
+}
+
+.new-chat{
+    font-size:16px;
+}
+
+.menu-title{
+    font-size:13px;
+}
+
+.chat-item{
+    font-size:14px;
+}
+
+.topbar h1{
+    font-size:25px;
+}
+
+.topbar p{
+    font-size:15px;
+}
+
+.message-role{
+    font-size:16px;
+}
+
+.message-time{
+    font-size:14px;
+}
+
+.message-text{
+    font-size:16px;
+}
+
+.badge{
+    font-size:13px;
+}
+
+.source-card{
+    font-size:10px;
+}
+
+.input-box textarea{
+    font-size:17px;
+}
+
+.footer-text{
+    font-size:14px;
+}
+
+.avatar{
+  width:34px;
+  height:34px;
+  flex:none;
+  border-radius:50%;
+  border:1px solid var(--line2);
+  background:#111a25;
+  display:grid;
+  place-items:center;
+  color:#a6b5c8;
+}
+
+.user .avatar{
+  background:#103c48;
+  border-color:#1a6578;
+  color:#dffbff;
+}
+
+.msg:not(.user) .avatar{
+  background:#182231;
+  border-color:#334156;
+  color:var(--cyan);
+}
+
+.welcome-logo{
+  margin:auto;
+  width:64px;
+  height:64px;
+  border-radius:18px;
+  border:1px solid #234c5a;
+  background:#0e222b;
+  display:grid;
+  place-items:center;
+  box-shadow:0 0 50px rgba(39,211,238,.08);
+  font-size:26px;
+  color:var(--cyan);
+}
+
+.source-card{
+  text-decoration:none;
+  cursor:pointer;
+}
+
+.source-card:hover{
+  border-color:var(--cyan);
+  background:#111c27;
+}
+
+.external-link{
+  color:var(--cyan);
+  font-size:11px;
+  margin-left:2px;
+}
 
 
 

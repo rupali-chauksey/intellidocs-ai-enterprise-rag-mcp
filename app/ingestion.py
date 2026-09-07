@@ -37,10 +37,20 @@ def _prepare_chunks(documents, source_name: str):
         chunk_size=settings.chunk_size,
         chunk_overlap=settings.chunk_overlap,
     )
+
     chunks = splitter.split_documents(documents)
+
     for i, chunk in enumerate(chunks):
-        chunk.metadata["chunk_id"] = i
+        chunk.metadata["chunk_id"] = i + 1
         chunk.metadata["source"] = source_name
+
+        # PDF page metadata
+        if "page" in chunk.metadata:
+            try:
+                chunk.metadata["page"] = int(chunk.metadata["page"]) + 1
+            except (TypeError, ValueError):
+                pass
+
     return chunks
 
 

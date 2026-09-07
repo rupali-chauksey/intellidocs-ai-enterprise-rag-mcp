@@ -1,5 +1,5 @@
 from typing import TypedDict, Optional
-
+from concurrent.futures import ThreadPoolExecutor
 from langchain_groq import ChatGroq
 from langgraph.graph import StateGraph, END
 
@@ -365,8 +365,78 @@ def web_node(state: AgentState):
 # ---------------------------------------------------------
 
 def both_node(state: AgentState):
-    return db_node(state)
+    """
+    Execute RAG retrieval and MCP database query in parallel.
 
+    This is used for hybrid questions that require both:
+    - uploaded enterprise documents
+    - structured company database information
+    """
+
+    history = state.get("history", [])
+    q = state["query"]
+
+    recent_user = [
+        m.get("content", "")
+        for m in history[-4:]
+        if m.get("role") == "user"
+    ]
+
+    enriched = " ".join(
+        recent_user[-2:] + [q]
+    )
+
+    state["used_web_search"] = False
+
+    def run_rag():
+        return retrieve_from_knowledge_base(
+            enriched,
+            settings.top_k,
+        )
+
+    def run_database():
+        return ask_database(
+            q,
+            history,
+        )
+
+    # RAG + MCP execute concurrently
+    with ThreadPoolExecutor(max_workers=2) as executor:
+
+        rag_future = executor.submit(run_rag)
+        db_future = executor.submit(run_database)
+
+        try:
+            state["kb_results"] = rag_future.result()
+        except Exception as exc:
+            state["kb_results"] = []
+            state.setdefault("debug", {})["rag_error"] = str(exc)
+
+        try:
+            state["db_result"] = db_future.result()
+
+            state["tool_used"] = state["db_result"].get(
+                "tool_used",
+                "",
+            )
+
+        except Exception as exc:
+            import traceback
+            traceback.print_exc()
+
+            state["db_result"] = {
+                "answer": "Database access failed.",
+                "tool_used": "database_error",
+                "raw_data": str(exc),
+                "error": True,
+            }
+
+            state["tool_used"] = "database_error"
+
+    # Apply normal RAG relevance filtering
+    grade_node(state)
+
+    return state
 
 # ---------------------------------------------------------
 # SYNTHESIS
@@ -382,43 +452,77 @@ def synthesize_node(state: AgentState):
 
     # ---------------- DOCUMENTS ----------------
 
+    # ---------------- DOCUMENTS ----------------
+
     if route in {"rag", "both"}:
 
-        for r in state.get("kb_results", []):
+       for r in state.get("kb_results", []):
 
-            blocks.append(
-                f"SOURCE: {r['source']}\n"
-                f"CONTENT:\n{r['text']}"
+        page_info = (
+            f"Page {r['page']}"
+            if r.get("page") is not None
+            else ""
+        )
+
+        chunk_info = (
+            f"Chunk {r['chunk']}"
+            if r.get("chunk") is not None
+            else ""
+        )
+
+        location_info = " · ".join(
+            x for x in [page_info, chunk_info] if x
+        )
+
+        blocks.append(
+            f"SOURCE: {r['source']}"
+            + (f" — {location_info}" if location_info else "")
+            + f"\nCONTENT:\n{r['text']}"
+        )
+
+        citation_key = (
+            r["source"],
+            r.get("page"),
+            r.get("chunk"),
+        )
+
+        existing_keys = [
+            (
+                c["source"],
+                c.get("page"),
+                c.get("chunk"),
             )
+            for c in citations
+        ]
 
-            if r["source"] not in [
-                c["source"] for c in citations
-            ]:
+        if citation_key not in existing_keys:
 
-                citations.append(
-                    {
-                        "id": len(citations) + 1,
-                        "source": r["source"],
-                        "score": round(
-                            float(
-                                r.get("score", 0)
-                            ),
-                            3,
-                        ),
-                    }
-                )
+            citations.append(
+                {
+                    "id": len(citations) + 1,
+                    "source": r["source"],
+                    "page": r.get("page"),
+                    "chunk": r.get("chunk"),
+                    "score": round(
+                        float(r.get("score", 0)),
+                        3,
+                    ),
+                }
+            )
+    # ---------------- WEB ----------------
+
+    # ---------------- WEB ----------------
 
     # ---------------- WEB ----------------
 
     if state.get("web_results"):
 
-        for r in state["web_results"]:
+     for r in state["web_results"]:
 
-            blocks.append(
-                f"WEB SOURCE: {r['source']}\n"
-                f"CONTENT:\n{r['text']}"
-            )
-
+        blocks.append(
+            f"WEB SOURCE: {r['source']}\n"
+            f"CONTENT:\n{r['text']}"
+        )
     # ---------------- DATABASE ----------------
 
     if (
@@ -521,8 +625,10 @@ def build_graph():
     g.add_node("retrieve", retrieve_node)
     g.add_node("grade", grade_node)
     g.add_node("db", db_node)
+    g.add_node("both_sources", both_node)
     g.add_node("web_search", web_node)
     g.add_node("synthesize", synthesize_node)
+
 
     g.set_entry_point("classify")
 
@@ -532,7 +638,7 @@ def build_graph():
         {
             "rag": "retrieve",
             "database": "db",
-            "both": "retrieve",
+            "both": "both_sources",           
             "web": "web_search",
         },
     )

@@ -6,6 +6,23 @@ IntelliDocs AI is a multi-source enterprise AI assistant that combines **Retriev
 
 ---
 
+
+🎥 **Demo Video:** *(space reserved — add your video link here)*
+
+> [DEMO_VIDEO_LINK_HERE](DEMO_VIDEO_LINK_HERE)
+
+## 📸 Images 
+
+**RAG + Hybrid Query in action:**
+
+![RAG Query](Assets/test_1.png)
+
+**Follow-up context + MCP Database + Web Search:**
+
+![Hybrid Query](Assets/test_2.png)
+
+---
+
 ## ✨ Key Features
 
 ### 📚 1. Retrieval-Augmented Generation (RAG)
@@ -575,22 +592,6 @@ Rather than building only a chatbot, IntelliDocs AI focuses on building a multi-
 
 ---
 
-## 📸 Screenshots & Demo
-
-**RAG + Hybrid Query in action:**
-
-![RAG Query](Assets/test_1.png)
-
-**Follow-up context + MCP Database + Web Search:**
-
-![Hybrid Query](Assets/test_2.png)
-
-🎥 **Demo Video:** *(space reserved — add your video link here)*
-
-> [DEMO_VIDEO_LINK_HERE](DEMO_VIDEO_LINK_HERE)
-
----
-
 ## 👩‍💻 Author
 
 **Rupali Chouksey**
@@ -614,7 +615,7 @@ Add your preferred open-source license here (e.g., MIT License).
 
 ---
 
-## 📊 Final Note
+## ❤️ Final Note
 
 IntelliDocs AI brings enterprise documents, structured company data, and external web intelligence together through an intelligent AI workflow.
 

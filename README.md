@@ -616,7 +616,7 @@ Add your preferred open-source license here (e.g., MIT License).
 
 ---
 
-## ❤️ Final Note
+## 📄Final Note
 
 IntelliDocs AI brings enterprise documents, structured company data, and external web intelligence together through an intelligent AI workflow.
 

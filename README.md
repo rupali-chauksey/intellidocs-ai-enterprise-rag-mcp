@@ -9,7 +9,11 @@ IntelliDocs AI is a multi-source enterprise AI assistant that combines **Retriev
 
 🎥 **Demo Video:** *(space reserved — add your video link here)*
 
-> [DEMO_VIDEO_LINK_HERE](DEMO_VIDEO_LINK_HERE)
+
+
+
+
+
 
 ## 📸 Images 
 

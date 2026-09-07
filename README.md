@@ -13,13 +13,10 @@ IntelliDocs AI is a multi-source enterprise AI assistant that combines **Retriev
 
 ## 📸 Images 
 
-**RAG + Hybrid Query in action:**
+**MCP Database + Web Search+RAG**
 
-<img width="1915" height="1013" alt="test 1" src="https://github.com/user-attachments/assets/4c13d287-c1fd-4497-99c1-6e08fe7c9703" />
+<img width="1912" height="1017" alt="test 1" src="https://github.com/user-attachments/assets/72da7124-efb1-49c5-8038-b838e7b21962" />
 
-**Follow-up context + MCP Database + Web Search:**
-
-<img width="1917" height="941" alt="test 2" src="https://github.com/user-attachments/assets/9e0b806f-736f-446f-9f2b-89381140b2c0" />
 
 
 ---

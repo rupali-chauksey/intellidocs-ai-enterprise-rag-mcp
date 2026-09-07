@@ -167,14 +167,5 @@ I'm actively open to:
 | **Twitter** | [@rupalichauksey](https://twitter.com/rupalichauksey) |
 | **GitHub** | [rupali-chauksey](https://github.com/rupali-chauksey) |
 
----
 
-<div align="center">
 
-### Made with 💪 by Rupali Chauksey
-
-**Building the future, one agent at a time** 🚀
-
-[![Profile Views](https://komarev.com/ghpvc/?username=Rupali-chauksey&color=00D4FF&style=flat-square)](https://github.com/rupali-chauksey)
-
-</div>

@@ -270,11 +270,6 @@ IntelliDocs_AI_Enterprise_RAG_MCP/
 
 ---
 
-## 🔗 Project Link
-
-> 📂 **Repository & Live Demo Video:** [PROJECT_LINK_HERE](PROJECT_LINK_HERE)
-
----
 
 ## ⚙️ Installation & Setup
 

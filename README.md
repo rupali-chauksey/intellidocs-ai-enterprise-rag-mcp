@@ -596,7 +596,7 @@ Rather than building only a chatbot, IntelliDocs AI focuses on building a multi-
 ## 👩‍💻 Author
 
 **Rupali Chouksey**
-AI / Machine Learning Developer
+AI Engineer 
 
 ---
 
@@ -610,11 +610,6 @@ If you found this project interesting or useful:
 
 ---
 
-## 📜 License
-
-Add your preferred open-source license here (e.g., MIT License).
-
----
 
 ## 📄Final Note
 

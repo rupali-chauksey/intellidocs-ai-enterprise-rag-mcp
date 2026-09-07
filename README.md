@@ -7,7 +7,7 @@ IntelliDocs AI is a multi-source enterprise AI assistant that combines **Retriev
 ---
 
 
-🎥 **Demo Video:** *(space reserved — add your video link here)*
+🎥 **Demo Video:** 
 
 https://github.com/user-attachments/assets/74e28186-4539-4337-a1e2-9add03b54a40
 
@@ -17,8 +17,6 @@ https://github.com/user-attachments/assets/74e28186-4539-4337-a1e2-9add03b54a40
 **MCP Database + Web Search+RAG**
 
 <img width="1912" height="1017" alt="test 1" src="https://github.com/user-attachments/assets/72da7124-efb1-49c5-8038-b838e7b21962" />
-
-
 
 ---
 

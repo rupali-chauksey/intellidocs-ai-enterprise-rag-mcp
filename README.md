@@ -34,9 +34,8 @@ https://github.com/user-attachments/assets/74e28186-4539-4337-a1e2-9add03b54a40
 
 ---
 
-## 📸 Architecture Visualization
+## 📸 Live Demo Screenshot
 
-**IntelliDocs AI Processing Pipeline:**
 
 <img width="1912" height="1017" alt="IntelliDocs AI Demo" src="https://github.com/user-attachments/assets/72da7124-efb1-49c5-8038-b838e7b21962" />
 

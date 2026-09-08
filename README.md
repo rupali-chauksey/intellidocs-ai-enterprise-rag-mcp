@@ -514,7 +514,6 @@ Input: RAG + Database Question
 | **Frontend** | HTML/CSS/JavaScript | User interface |
 | **Server** | Uvicorn | ASGI application server |
 | **Containerization** | Docker & Docker Compose | Production deployment |
-| **API Documentation** | Swagger/OpenAPI | Auto-generated docs |
 
 ---
 

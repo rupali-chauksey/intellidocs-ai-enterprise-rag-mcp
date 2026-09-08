@@ -9,7 +9,7 @@
 
 **One assistant, multiple knowledge sources, intelligent routing.**
 
-[🎥 Demo Video](#-demo-video) • [📖 Features](#-key-features) • [⚡ Quick Start](#-quick-start) • [🛠️ Setup](#-installation-setup)
+[🎥 Demo Video](#-demo-video) • [📖 Features](#-key-features) • [⚡ Quick Start](#-quick-start) • [🛠️ Setup](#-installation-setup) • [🔮 Roadmap](#-future-improvements)
 
 </div>
 
@@ -1049,9 +1049,21 @@ Time Complexity:
 - 🔒 User authentication & authorization
 - 👥 Multi-user workspaces with role-based access
 - 🔑 Enterprise SSO (SAML, OAuth2)
+- 🏢 Organization-level management
+- 🗂️ Document-level & field-level access control
+
+**🛡️ Safety & Reliability**
+- 🧭 Hallucination detection & response confidence scoring
+- 🚦 Fallback mechanism when RAG/MCP/Web search all fail
+- ⏱️ Rate limiting & API throttling
+- ⚡ Caching layer for repeated queries
+
+**📜 Data Governance**
+- 📝 Audit logs for queries & responses
+- 🔐 PII / sensitive data masking in responses
+- 🗑️ Data retention & deletion policies (GDPR-style compliance)
 
 **⚙️ Infrastructure**
-- 🏢 Organization-level management
 - ☁️ Cloud deployment templates
 - 🗄️ PostgreSQL & MongoDB support
 - 📦 Vector DB options (Pinecone, Weaviate, Milvus)
@@ -1065,6 +1077,10 @@ Time Complexity:
 - 🎨 Advanced UI customization
 - 🧪 Comprehensive test coverage
 - 🤖 Multi-agent collaboration
+- 💬 User feedback loop (thumbs up/down on answers)
+
+*Contributions welcome for any of the above.*
+
 ---
 
 ## 🎓 What This Project Demonstrates
@@ -1112,5 +1128,3 @@ IntelliDocs AI brings together the best of modern AI technologies to create a pr
 ```
 
 **Enterprise Knowledge + Business Data + Web Intelligence = IntelliDocs AI**
-
-

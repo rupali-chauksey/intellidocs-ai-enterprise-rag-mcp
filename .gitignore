@@ -7,3 +7,4 @@ company.db
 .pytest_cache/
 .vscode/
 docker-build.log
+docker-build.log

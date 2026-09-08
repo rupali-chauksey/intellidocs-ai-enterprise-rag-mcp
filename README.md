@@ -5,6 +5,9 @@
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.100+-green.svg)](https://fastapi.tiangolo.com/)
 [![Stars](https://img.shields.io/github/stars/rupali-chouksey/IntelliDocs-AI?style=social)](https://github.com/rupali-chouksey/IntelliDocs-AI)
 
+</<div align="center">
+
+
 **One assistant, multiple knowledge sources, intelligent routing.**
 
 [🎥 Demo Video](#-demo-video) • [📖 Features](#-key-features) • [⚡ Quick Start](#-quick-start) • [🛠️ Setup](#-installation-setup) • [🤝 Contributing](#-contributing)

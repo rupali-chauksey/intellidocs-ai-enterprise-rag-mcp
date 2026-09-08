@@ -4,6 +4,7 @@
 
 [![Python 3.9+](https://img.shields.io/badge/Python-3.9+-blue.svg)](https://www.python.org/downloads/)
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.100+-green.svg)](https://fastapi.tiangolo.com/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Stars](https://img.shields.io/github/stars/rupali-chouksey/IntelliDocs-AI?style=social)](https://github.com/rupali-chouksey/IntelliDocs-AI)
 
 **One assistant, multiple knowledge sources, intelligent routing.**
@@ -75,10 +76,10 @@ cp .env.example .env
 python setup_db.py
 
 # 6️⃣ Run the application
-python -m uvicorn app.main:app --reload
+python -m uvicorn app.main:app --reload --port 8002
 
 # 7️⃣ Open browser
-# Navigate to http://localhost:8000
+# Navigate to http://localhost:8002
 ```
 
 **Done! 🎉** Your IntelliDocs AI instance is now running.
@@ -152,15 +153,15 @@ sqlite3 company.db ".tables"
 #### Step 6: Run the Application
 ```bash
 # Development mode (with auto-reload)
-python -m uvicorn app.main:app --reload --port 8000
+python -m uvicorn app.main:app --reload --port 8002
 
 # Production mode
-python -m uvicorn app.main:app --port 8000 --workers 4
+python -m uvicorn app.main:app --port 8002 --workers 4
 ```
 
 #### Step 7: Access the Application
 ```
-📱 Open your browser: http://localhost:8000
+📱 Open your browser: http://localhost:8002
 ```
 
 ---
@@ -740,10 +741,10 @@ docker compose down
 
 ```bash
 # Production setup
-python -m uvicorn app.main:app --host 0.0.0.0 --port 8000 --workers 4
+python -m uvicorn app.main:app --host 0.0.0.0 --port 8002 --workers 4
 
 # With logging
-python -m uvicorn app.main:app --host 0.0.0.0 --port 8000 --workers 4 --log-level info
+python -m uvicorn app.main:app --host 0.0.0.0 --port 8002 --workers 4 --log-level info
 ```
 
 ### Cloud Deployment (Coming Soon)
@@ -794,7 +795,7 @@ pytest --cov=app tests/
 ```bash
 source venv/bin/activate  # Activate virtual environment
 pip install -r requirements.txt  # Reinstall dependencies
-python -m uvicorn app.main:app --reload  # Run with correct import path
+python -m uvicorn app.main:app --reload --port 8002  # Run with correct import path
 ```
 
 ---
@@ -838,18 +839,18 @@ rm -rf chroma_db/
 
 ### Issue: Port Already in Use
 
-**Error:** `Address already in use: ('127.0.0.1', 8000)`
+**Error:** `Address already in use: ('127.0.0.1', 8002)`
 
 **Solution:**
 ```bash
 # Option 1: Use different port
-python -m uvicorn app.main:app --port 8001
+python -m uvicorn app.main:app --port 8003
 
 # Option 2: Kill process using port (Linux/macOS)
-lsof -ti:8000 | xargs kill -9
+lsof -ti:8002 | xargs kill -9
 
 # Option 3: Find and kill process (Windows)
-netstat -ano | findstr :8000
+netstat -ano | findstr :8002
 taskkill /PID <PID> /F
 ```
 
@@ -862,10 +863,10 @@ taskkill /PID <PID> /F
 **Solution:**
 ```bash
 # Don't use --reload when testing uploads
-python -m uvicorn app.main:app --port 8000
+python -m uvicorn app.main:app --port 8002
 
 # Or use production mode:
-python -m uvicorn app.main:app --workers 4
+python -m uvicorn app.main:app --port 8002 --workers 4
 ```
 
 ---
@@ -886,7 +887,7 @@ See [**TROUBLESHOOTING.md**](docs/TROUBLESHOOTING.md) for:
 ### Health Check Endpoint
 
 ```bash
-curl http://localhost:8000/api/health
+curl http://localhost:8002/api/health
 ```
 
 **Response:**
@@ -906,10 +907,10 @@ curl http://localhost:8000/api/health
 
 ```bash
 # Get all documents status
-curl http://localhost:8000/api/documents/status
+curl http://localhost:8002/api/documents/status
 
 # Get specific document details
-curl http://localhost:8000/api/documents/<doc_id>
+curl http://localhost:8002/api/documents/<doc_id>
 ```
 
 ### Logs
@@ -937,7 +938,7 @@ pip install -r requirements-dev.txt
 
 # Run with debug mode
 export PYTHONUNBUFFERED=1
-python -m uvicorn app.main:app --reload --log-level debug
+python -m uvicorn app.main:app --reload --port 8002 --log-level debug
 
 # Format code
 black app/
@@ -952,8 +953,8 @@ mypy app/
 ### API Documentation
 
 Auto-generated documentation available at:
-- Swagger UI: `http://localhost:8000/docs`
-- ReDoc: `http://localhost:8000/redoc`
+- Swagger UI: `http://localhost:8002/docs`
+- ReDoc: `http://localhost:8002/redoc`
 
 ---
 
@@ -1011,7 +1012,20 @@ Auto-generated documentation available at:
 - "Total revenue and employees"
 - "Company statistics"
 
---
+---
+
+### Tool: `run_custom_query`
+
+**Description:** Safe SELECT queries (restricted)
+
+**Allowed Operations:**
+- ✅ SELECT statements
+- ✅ WHERE clauses
+- ✅ JOIN operations
+- ❌ INSERT, UPDATE, DELETE
+- ❌ DROP, ALTER
+
+---
 
 ## 🎯 Performance Optimization
 
@@ -1030,6 +1044,43 @@ Time Complexity:
 - Recently retrieved documents cached in memory
 - Embedding results cached in ChromaDB
 - MCP tool results cached for 5 minutes
+
+### Scaling Recommendations
+
+- **Small deployments:** Single FastAPI instance
+- **Medium deployments:** Load balancer + 2-3 instances
+- **Large deployments:** Kubernetes + autoscaling + CDN
+
+---
+
+## 🔮 Future Improvements
+
+- 🔐 User authentication & authorization
+- 👥 Multi-user workspaces with role-based access
+- 🏢 Organization-level management
+- ☁️ Cloud deployment templates
+- 🗄️ PostgreSQL & MongoDB support
+- 📦 Vector DB options (Pinecone, Weaviate, Milvus)
+- ⚡ Streaming responses with Server-Sent Events
+- 📊 Advanced analytics & observability
+- 🔎 Enhanced citation & source tracking
+- 🔑 Enterprise SSO (SAML, OAuth2)
+- 🤖 Multi-agent collaboration
+- 📈 Production monitoring & alerting
+- 🧪 Comprehensive test coverage
+- 🌍 Distributed deployment architecture
+- 🎨 Advanced UI customization
+
+---
+
+
+## 📚 Documentation
+
+- **[API Documentation](docs/API.md)** — Complete API reference
+- **[Architecture Guide](docs/ARCHITECTURE.md)** — Deep dive into system design
+- **[Troubleshooting Guide](docs/TROUBLESHOOTING.md)** — Common issues & solutions
+- **[Development Guide](docs/DEVELOPMENT.md)** — Setup for contributors
+- **[Deployment Guide](docs/DEPLOYMENT.md)** — Production deployment
 
 ---
 
@@ -1052,7 +1103,7 @@ This is a **production-grade implementation** of modern AI systems covering:
 | **DevOps** | Docker, Docker Compose |
 | **Testing** | pytest, integration tests |
 
-
+---
 
 ## 📄 Final Note
 
@@ -1079,7 +1130,3 @@ IntelliDocs AI brings together the best of modern AI technologies to create a pr
 
 **Enterprise Knowledge + Business Data + Web Intelligence = IntelliDocs AI**
 
----
-
-
-[⭐ Star on GitHub](https://github.com/rupali-chouksey/IntelliDocs-AI) • [🐛 Report Issues](https://github.com/rupali-chouksey/IntelliDocs-AI/issues) • [💡 Suggest Features](https://github.com/rupali-chouksey/IntelliDocs-AI/discussions)

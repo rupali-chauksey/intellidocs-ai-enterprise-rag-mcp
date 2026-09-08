@@ -46,7 +46,7 @@ https://github.com/user-attachments/assets/74e28186-4539-4337-a1e2-9add03b54a40
 
 ### Prerequisites
 - **Python 3.9+**
-- **GROQ API Key** ([Get free key](https://console.groq.com))
+- **GROQ API Key** 
 - **Git** (for cloning)
 
 ### Installation & Running

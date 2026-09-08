@@ -8,3 +8,4 @@ company.db
 .vscode/
 docker-build.log
 docker-build.log
+chroma_db_backup/

@@ -871,17 +871,6 @@ python -m uvicorn app.main:app --port 8002 --workers 4
 
 ---
 
-### More Detailed Troubleshooting
-
-See [**TROUBLESHOOTING.md**](docs/TROUBLESHOOTING.md) for:
-- Server setup issues
-- Database connectivity problems
-- Vector store initialization
-- Performance optimization
-- Advanced debugging
-
----
-
 ## 🩺 Diagnostics & Monitoring
 
 ### Health Check Endpoint

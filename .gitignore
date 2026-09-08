@@ -6,3 +6,4 @@ chroma_db/
 company.db
 .pytest_cache/
 .vscode/
+docker-build.log

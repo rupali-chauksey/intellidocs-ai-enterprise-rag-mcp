@@ -11,7 +11,7 @@
 [🎥 Demo Video](#-demo-video) • [📖 Features](#-key-features) • [⚡ Quick Start](#-quick-start) • [🛠️ Setup](#-installation-setup) • [🤝 Contributing](#-contributing)
  
 </div>
-
+-------
 
 ## 🎯 Overview
 

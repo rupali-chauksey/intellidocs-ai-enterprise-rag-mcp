@@ -9,7 +9,7 @@
 
 **One assistant, multiple knowledge sources, intelligent routing.**
 
-[🎥 Demo Video](#-demo-video) • [📖 Features](#-key-features) • [⚡ Quick Start](#-quick-start) • [🛠️ Setup](#-installation-setup) • [🤝 Contributing](#-contributing)
+[🎥 Demo Video](#-demo-video) • [📖 Features](#-key-features) • [⚡ Quick Start](#-quick-start) • [🛠️ Setup](#-installation-setup)
 
 </div>
 
@@ -1073,88 +1073,6 @@ Time Complexity:
 
 ---
 
-## 🤝 Contributing
-
-We welcome contributions! Here's how to get started:
-
-### Development Workflow
-
-1. **Fork the repository**
-   ```bash
-   git clone https://github.com/YOUR-USERNAME/IntelliDocs-AI.git
-   cd IntelliDocs-AI
-   ```
-
-2. **Create a feature branch**
-   ```bash
-   git checkout -b feature/your-feature-name
-   ```
-
-3. **Make your changes**
-   - Write clean, documented code
-   - Follow PEP 8 style guide
-   - Add tests for new features
-
-4. **Commit your changes**
-   ```bash
-   git commit -m "feat: description of your changes"
-   ```
-
-5. **Push to your fork**
-   ```bash
-   git push origin feature/your-feature-name
-   ```
-
-6. **Create a Pull Request**
-   - Describe what you changed and why
-   - Link any related issues
-   - Request review from maintainers
-
-### Contribution Guidelines
-
-- ✅ Write clear commit messages
-- ✅ Add tests for new features
-- ✅ Update documentation
-- ✅ Follow existing code style
-- ✅ Be respectful and inclusive
-
-### Types of Contributions
-
-- 🐛 Bug reports and fixes
-- ✨ New features
-- 📚 Documentation improvements
-- 🧪 Tests and test coverage
-- 🚀 Performance optimization
-- 🎨 UI/UX improvements
-
----
-
-## 📄 License
-
-This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
-
-### What You Can Do:
-✅ Use for commercial projects
-✅ Modify the code
-✅ Distribute
-✅ Use privately
-
-### Conditions:
-📋 Include original license
-📋 State changes made
-
----
-
-## 📚 Documentation
-
-- **[API Documentation](docs/API.md)** — Complete API reference
-- **[Architecture Guide](docs/ARCHITECTURE.md)** — Deep dive into system design
-- **[Troubleshooting Guide](docs/TROUBLESHOOTING.md)** — Common issues & solutions
-- **[Development Guide](docs/DEVELOPMENT.md)** — Setup for contributors
-- **[Deployment Guide](docs/DEPLOYMENT.md)** — Production deployment
-
----
-
 ## 🎓 What This Project Demonstrates
 
 This is a **production-grade implementation** of modern AI systems covering:
@@ -1182,68 +1100,10 @@ This is a **production-grade implementation** of modern AI systems covering:
 - 🎯 AI Engineer
 - 💼 Enterprise AI Systems
 - 🔗 [GitHub](https://github.com/rupali-chouksey)
-- 📧 Contact: rupali.chouksey@example.com
+- 📧 Contact: rupalichauksey@gmail.com
 
 ---
 
-## ⭐ Show Your Support
-
-If you found this project useful or interesting:
-
-1. **Star the repository** ⭐
-   - Click the star button to show support
-   - Helps other developers discover it
-
-2. **Fork the project** 🍴
-   - Create your own version
-   - Contribute improvements
-
-3. **Share feedback** 💬
-   - Open issues for bugs
-   - Suggest features
-   - Discuss improvements
-
-4. **Contribute code** 🚀
-   - Submit pull requests
-   - Improve documentation
-   - Add tests
-
-5. **Share with others** 📢
-   - Recommend to colleagues
-   - Share on social media
-   - Blog about it
-
----
-
-## 🙏 Acknowledgments
-
-- **Groq Team** for fast LLM inference
-- **LangChain Community** for LangGraph
-- **Anthropic** for Claude insights
-- **ChromaDB** team for vector database
-- **All contributors** who improved this project
-
----
-
-## 📞 Support & Contact
-
-### Getting Help
-
-1. **Documentation** — Check docs/ folder first
-2. **Issues** — Search GitHub issues for similar problems
-3. **Discussions** — Start a discussion for questions
-4. **Email** — Direct contact for urgent matters
-
-### Report a Bug
-
-When reporting bugs, please include:
-- Description of the issue
-- Steps to reproduce
-- Python version
-- Error messages/logs
-- Environment details
-
----
 
 ## 📄 Final Note
 
@@ -1270,14 +1130,4 @@ IntelliDocs AI brings together the best of modern AI technologies to create a pr
 
 **Enterprise Knowledge + Business Data + Web Intelligence = IntelliDocs AI**
 
----
 
-<div align="center">
-
-**Built with ❤️ by the AI Engineering Community**
-
-**Join us in building the future of enterprise AI!**
-
-[⭐ Star on GitHub](https://github.com/rupali-chouksey/IntelliDocs-AI) • [🐛 Report Issues](https://github.com/rupali-chouksey/IntelliDocs-AI/issues) • [💡 Suggest Features](https://github.com/rupali-chouksey/IntelliDocs-AI/discussions)
-
-</div>

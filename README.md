@@ -1083,17 +1083,6 @@ This is a **production-grade implementation** of modern AI systems covering:
 
 ---
 
-## 👩‍💻 Author & Maintainer
-
-**Rupali Chouksey**
-- 🎯 AI Engineer
-- 💼 Enterprise AI Systems
-- 🔗 [GitHub](https://github.com/rupali-chouksey)
-- 📧 Contact: rupalichauksey@gmail.com
-
----
-
-
 ## 📄 Final Note
 
 IntelliDocs AI brings together the best of modern AI technologies to create a practical, production-ready system for enterprise knowledge management.

@@ -5,7 +5,7 @@
 [![Python 3.9+](https://img.shields.io/badge/Python-3.9+-blue.svg)](https://www.python.org/downloads/)
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.100+-green.svg)](https://fastapi.tiangolo.com/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![Stars](https://img.shields.io/github/stars/rupali-chouksey/IntelliDocs-AI?style=social)](https://github.com/rupali-chouksey/IntelliDocs-AI)
+[![Stars](https://img.shields.io/github/stars/rupali-chauksey/intellidocs-ai-enterprise-rag-mcp?style=social)](https://github.com/rupali-chauksey/intellidocs-ai-enterprise-rag-mcp)
 
 **One assistant, multiple knowledge sources, intelligent routing.**
 
@@ -55,8 +55,8 @@ https://github.com/user-attachments/assets/74e28186-4539-4337-a1e2-9add03b54a40
 
 ```bash
 # 1️⃣ Clone the repository
-git clone https://github.com/rupali-chouksey/IntelliDocs-AI.git
-cd IntelliDocs-AI
+git clone https://github.com/rupali-chauksey/intellidocs-ai-enterprise-rag-mcp.git
+cd intellidocs-ai-enterprise-rag-mcp
 
 # 2️⃣ Create virtual environment
 python -m venv venv
@@ -105,8 +105,8 @@ python -m uvicorn app.main:app --reload --port 8002
 
 #### Step 1: Clone Repository
 ```bash
-git clone https://github.com/rupali-chouksey/IntelliDocs-AI.git
-cd IntelliDocs-AI
+git clone https://github.com/rupali-chauksey/intellidocs-ai-enterprise-rag-mcp.git
+cd intellidocs-ai-enterprise-rag-mcp
 ```
 
 #### Step 2: Virtual Environment Setup

@@ -3,6 +3,7 @@
 <div align="center">
 [![Python 3.9+](https://img.shields.io/badge/Python-3.9+-blue.svg)](https://www.python.org/downloads/)
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.100+-green.svg)](https://fastapi.tiangolo.com/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Stars](https://img.shields.io/github/stars/rupali-chouksey/IntelliDocs-AI?style=social)](https://github.com/rupali-chouksey/IntelliDocs-AI)
  
 **One assistant, multiple knowledge sources, intelligent routing.**
@@ -10,7 +11,6 @@
 [🎥 Demo Video](#-demo-video) • [📖 Features](#-key-features) • [⚡ Quick Start](#-quick-start) • [🛠️ Setup](#-installation-setup) • [🤝 Contributing](#-contributing)
  
 </div>
-
 ---
 
 ## 🎯 Overview

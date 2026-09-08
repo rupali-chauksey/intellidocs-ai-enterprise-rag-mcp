@@ -1,4 +1,3 @@
-FROM python:3.11-slim
 
 WORKDIR /app
 
@@ -11,5 +10,6 @@ COPY data/ ./data/
 # build the vector index at image-build time so the container is ready to serve
 RUN python -m app.ingestion
 
-EXPOSE 8000
-CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000"]
+EXPOSE 8002
+CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", " 8002"]
+

@@ -39,6 +39,9 @@ https://github.com/user-attachments/assets/74e28186-4539-4337-a1e2-9add03b54a40
 
 <img width="1912" height="1017" alt="IntelliDocs AI Demo" src="https://github.com/user-attachments/assets/72da7124-efb1-49c5-8038-b838e7b21962" />
 
+<img width="1908" height="824" alt="ChatGPT Image Sep 8, 2026, 11_58_46 AM" src="https://github.com/user-attachments/assets/f4766053-1e90-4e1b-9fde-57ecd670225a" />
+
+
 ---
 
 ## ⚡ Quick Start (5 Minutes)
